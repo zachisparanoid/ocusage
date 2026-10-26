@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renderCompactDashboard > matches the compact snapshot 1`] = `
+"5-hour      █░░░░░░░░░ 7%  resets in 4h 57m
+weekly      ██░░░░░░░░ 24%  resets in 5d 16h"
+`;
+
+exports[`renderDashboard (color) > matches the colored snapshot 1`] = `
+"  [1m[38;2;16;163;127mCodex · usage[39m[22m
+  [38;2;230;230;230myou@example.com · Plus[39m          [38;2;138;138;138mfetched 2026-09-06 14:03[39m
+
+  [38;2;230;230;230mCurrent 5-hour window[39m
+  [38;2;74;222;128m██[39m[38;2;58;58;58m░░░░░░░░░░░░░░░░░░░░░░░░░░[39m  [1m[38;2;74;222;128m  7%[39m[22m      [38;2;138;138;138mresets in 4h 57m · ~1.24M tokens[39m
+
+  [38;2;230;230;230mCurrent week[39m
+  [38;2;74;222;128m███████[39m[38;2;58;58;58m░░░░░░░░░░░░░░░░░░░░░[39m  [1m[38;2;74;222;128m 24%[39m[22m      [38;2;138;138;138mresets in 5d 16h · ~18.3M tokens[39m"
+`;
+
+exports[`renderDashboard (plain) > matches the plain-text snapshot 1`] = `
+"  Codex · usage
+  you@example.com · Plus          fetched 2026-09-06 14:03
+
+  Current 5-hour window
+  ██░░░░░░░░░░░░░░░░░░░░░░░░░░    7%      resets in 4h 57m · ~1.24M tokens
+
+  Current week
+  ███████░░░░░░░░░░░░░░░░░░░░░   24%      resets in 5d 16h · ~18.3M tokens"
+`;

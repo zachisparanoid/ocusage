@@ -1,0 +1,62 @@
+{
+  "name": "ocusage",
+  "version": "0.1.0",
+  "description": "A colorful, cross-platform CLI dashboard for your OpenAI Codex usage limits.",
+  "type": "module",
+  "license": "MIT",
+  "author": "zachisparanoid",
+  "homepage": "https://github.com/zachisparanoid/ocusage#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachisparanoid/ocusage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zachisparanoid/ocusage/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "ocusage": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/cli.js",
+    "prepare": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^15.0.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.10.0",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.4",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.1",
+    "vitest": "^4.1.9"
+  },
+  "keywords": [
+    "openai",
+    "codex",
+    "codex-cli",
+    "cli",
+    "usage",
+    "dashboard"
+  ]
+}
